@@ -1,0 +1,300 @@
+* {
+  background-image: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar {
+  /* background: url(/images/banner-bg.png); */
+  color: black;
+  position: relative;
+  z-index: 999;
+}
+
+.navbar::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbar-logo {
+  float: left;
+  padding: 15px 0;
+}
+
+.navbar-logo img {
+  height: 100px;
+  /* border-radius: 50%; */
+}
+
+.navbar-menu {
+  display: none;
+}
+
+.navbar-menu.show {
+  display: block;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu li {
+  margin-left: 15px;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.navbar-toggle {
+  display: flex;
+  align-items: center;
+  float: right;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.toggle-icon {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-icon::before,
+.toggle-icon::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-icon::before {
+  top: -6px;
+}
+
+.toggle-icon::after {
+  top: 6px;
+  color: black;
+}
+
+.navbar-toggle.open .toggle-icon {
+  background-color: transparent;
+}
+
+.navbar-toggle.open .toggle-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggle.open .toggle-icon::after {
+  transform: rotate(-45deg);
+  top: 0;
+  color: black
+}
+
+@media (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-menu ul.menu li a {
+    color: white;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu ul.menu li a {
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-menu {
+    display: flex;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar-menu ul.menu li a {
+    color: white;
+  }
+}
+
+/* whatsappicon */
+.container-1 {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.whatsapp {
+  background-color: #25d366;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.whatsapp a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.whatsapp img {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  .container-1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 770px) {
+  .container-1 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Form container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Form labels */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Form input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Form submit button */
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Form submit button on hover */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.section .work {
+  margin-top: 30px;
+  background-color: black;
+}
+
+.navbar-content {
+  overflow: hidden;
+  background-color: #420106;
+}
+
+#moving-form {
+  margin-top: 5px;
+  white-space: nowrap;
+  animation: moveLeft 20s infinite linear;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  display: inline-block;
+  width: 100%;
+}
+
+#moving-form span {
+  color: white;
+  font-size: 20px;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#phone-number {
+  margin-right: 20px;
+  /* Adjust the value to increase or decrease the space */
+}
+
+#email {
+  margin-right: 20px;
+  /* Adjust the value to increase or decrease the space */
+}
+
+#moving-form a.social-link {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#moving-form a.social-link i {
+  font-size: 20px;
+  color: #fff;
+}
+
+hr {
+  border-top: 1px solid #ff0000;
+  /* Replace #ff0000 with your desired color */
+}
