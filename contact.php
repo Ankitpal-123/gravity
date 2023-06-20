@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>gravitypackers&movers</title>
+    <title>Gravity Packers and Movers</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -40,333 +40,333 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
-    .toggle-icon {
-        /* Add the following line to change the color of the toggle icon to black */
-        filter: invert(1);
-    }
+        .toggle-icon {
+            /* Add the following line to change the color of the toggle icon to black */
+            filter: invert(1);
+        }
 
-    .location-icon {
-        color: #007bff;
-        font-size: 24px;
-        margin-right: 8px;
-    }
+        .location-icon {
+            color: #007bff;
+            font-size: 24px;
+            margin-right: 8px;
+        }
 
-    .contact-icons {
-        display: flex;
-        align-items: center;
-    }
+        .contact-icons {
+            display: flex;
+            align-items: center;
+        }
 
-    .contact-icons i {
-        margin-right: 8px;
-    }
+        .contact-icons i {
+            margin-right: 8px;
+        }
 
-    .heading {
-        background-color: rgb(219, 51, 51);
-        justify-content: center;
-        display: flex;
-        width: 400px;
-        border-radius: 10px 10px 0 0;
-        margin-left: 560px;
-    }
+        .heading {
+            background-color: rgb(219, 51, 51);
+            justify-content: center;
+            display: flex;
+            width: 400px;
+            border-radius: 10px 10px 0 0;
+            margin-left: 560px;
+        }
 
-    .heading p {
-        font-size: x-large;
-        color: black;
-    }
+        .heading p {
+            font-size: x-large;
+            color: black;
+        }
 
-    label {
-        font-size: large;
-        color: black;
-    }
+        label {
+            font-size: large;
+            color: black;
+        }
 
-    .container-2 {
-        background-color: rgb(154, 199, 184);
-        display: flex;
-        justify-content: center;
-        border: 2px solid black;
-        padding: 20px;
-        border-radius: 5px;
-        width: 400px;
-        margin: 0 auto;
-    }
+        .container-2 {
+            background-color: rgb(154, 199, 184);
+            display: flex;
+            justify-content: center;
+            border: 2px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            width: 400px;
+            margin: 0 auto;
+        }
 
-    .container-2 .radio {
-        display: flex;
-        font-size: x-large;
-        gap: 10px;
-    }
-
-    .container-2 form label {
-        margin-top: 10px;
-        margin-bottom: 5px;
-    }
-
-    .container-2 form input[type="text"],
-    .container-2 form input[type="tel"],
-    .container-2 form textarea {
-        width: 100%;
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 3px;
-        margin-bottom: 10px;
-    }
-
-    .container-2 form input[type="submit"] {
-        background-color: #4CAF50;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .container-2 form input[type="submit"]:hover {
-        background-color: #45a049;
-    }
-    </style>
-
-
-    <style>
-    @media screen and (max-width: 768px) {
-        .navbar-menu ul.menu li a {
-            color: black !important;
-            margin-left: -15px;
+        .container-2 .radio {
+            display: flex;
+            font-size: x-large;
             gap: 10px;
         }
 
-        .navbar-menu .menu {
-            gap: 10px;
-        }
-    }
-
-    .navbar-content {
-        overflow: hidden;
-        background-color: #420106
-    }
-
-    #moving-form {
-        white-space: nowrap;
-        animation: moveLeft 20s infinite linear;
-        animation-delay: -20s;
-        animation-fill-mode: forwards;
-        animation-timing-function: linear;
-        display: inline-block;
-        width: 100%;
-    }
-
-    #moving-form span {
-        color: white;
-        font-size: 20px;
-    }
-
-    @keyframes moveLeft {
-        0% {
-            transform: translateX(100%);
+        .container-2 form label {
+            margin-top: 10px;
+            margin-bottom: 5px;
         }
 
-        100% {
-            transform: translateX(-100%);
+        .container-2 form input[type="text"],
+        .container-2 form input[type="tel"],
+        .container-2 form textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
         }
-    }
 
-    #phone-number {
-        margin-right: 20px;
-        /* Adjust the value to increase or decrease the space */
-    }
+        .container-2 form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
-    #email {
-        margin-right: 20px;
-        /* Adjust the value to increase or decrease the space */
-    }
-
-    #moving-form a.social-link {
-        display: inline-block;
-        margin-left: 10px;
-    }
-
-    #moving-form a.social-link i {
-        font-size: 20px;
-        color: #fff;
-    }
-
-    hr {
-        border-top: 1px solid #ff0000;
-    }
-    </style>
-
-    <style>
-    .contact-section {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .address-details,
-    .contact-form {
-        width: 45%;
-        padding: 20px;
-        ;
-    }
-
-    .contact-form {
-        background-color: #ffffff;
-    }
-
-    h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin-bottom: 8px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    label {
-        font-weight: bold;
-        margin-bottom: 8px;
-    }
-
-    input,
-    textarea {
-        padding: 10px;
-        margin-bottom: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #ffffff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-
-
-    button:hover {
-        background-color: #0056b3;
-    }
-
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-    }
-
-    header {
-        background-color: #007bff;
-        color: #ffffff;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .contact-section {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 40px;
-    }
-
-    .address-details,
-    .contact-form {
-        width: 45%;
-        padding: 20px;
-        background-color: #f9f9f9;
-        border-radius: 8px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        margin-bottom: 8px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    label {
-        font-weight: bold;
-        margin-bottom: 8px;
-    }
-
-    input,
-    textarea {
-        padding: 10px;
-        margin-bottom: 12px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-    }
-
-    button {
-        padding: 10px 20px;
-        background-color: #007bff;
-        color: #ffffff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #0056b3;
-    }
+        .container-2 form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 
 
     <style>
-    @media (max-width: 768px) {
+        @media screen and (max-width: 768px) {
+            .navbar-menu ul.menu li a {
+                color: black !important;
+                margin-left: -15px;
+                gap: 10px;
+            }
+
+            .navbar-menu .menu {
+                gap: 10px;
+            }
+        }
+
+        .navbar-content {
+            overflow: hidden;
+            background-color: #420106
+        }
+
+        #moving-form {
+            white-space: nowrap;
+            animation: moveLeft 20s infinite linear;
+            animation-delay: -20s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            display: inline-block;
+            width: 100%;
+        }
+
+        #moving-form span {
+            color: white;
+            font-size: 20px;
+        }
+
+        @keyframes moveLeft {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        #phone-number {
+            margin-right: 20px;
+            /* Adjust the value to increase or decrease the space */
+        }
+
+        #email {
+            margin-right: 20px;
+            /* Adjust the value to increase or decrease the space */
+        }
+
+        #moving-form a.social-link {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        #moving-form a.social-link i {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        hr {
+            border-top: 1px solid #ff0000;
+        }
+    </style>
+
+    <style>
         .contact-section {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
         }
 
         .address-details,
         .contact-form {
-            width: 100%;
+            width: 45%;
+            padding: 20px;
+            ;
         }
 
-        .address-details {
-            margin-bottom: 20px;
+        .contact-form {
+            background-color: #ffffff;
         }
 
-        .radio {
+        h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        form {
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
 
-        .email {
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .contact-section {
             display: flex;
             justify-content: center;
-            font-size: 15px;
+            align-items: flex-start;
+            margin: 40px;
         }
-    }
 
-    /* Adjust the font sizes for smaller screens */
-    @media (max-width: 480px) {
+        .address-details,
+        .contact-form {
+            width: 45%;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
 
-        h1,
-        h3,
-        p {
+        h3 {
             font-size: 24px;
+            margin-bottom: 10px;
         }
-    }
+
+        p {
+            margin-bottom: 8px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+    <style>
+        @media (max-width: 768px) {
+            .contact-section {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .address-details,
+            .contact-form {
+                width: 100%;
+            }
+
+            .address-details {
+                margin-bottom: 20px;
+            }
+
+            .radio {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .email {
+                display: flex;
+                justify-content: center;
+                font-size: 15px;
+            }
+        }
+
+        /* Adjust the font sizes for smaller screens */
+        @media (max-width: 480px) {
+
+            h1,
+            h3,
+            p {
+                font-size: 24px;
+            }
+        }
     </style>
 
 
@@ -376,16 +376,16 @@
     <!--header section start -->
     <div class="navbar-content">
         <div id="moving-form">
-            <span id="phone-number">Phone: 9380153945 / 8431881266</span>
-            <span id="email">E-mail :info@gravitypackersandmovers.com</span>
+            <span id="phone-number" style="font-size: 30px;">Phone: 9380153945 / 8431881266</span>
+            <span id="email" style="font-size: 30px;">E-mail :info@gravitypackersandmovers.com</span>
             <a href="https://www.facebook.com/profile.php?id=100093344330589" target="_blank" class="social-link"><i
-                    class="fab fa-facebook"></i></a>
+                    class="fab fa-facebook" style="font-size: xx-large;"></i></a>
             <a href="https://www.instagram.com/gravitypackers/" target="_blank" class="social-link"><i
-                    class="fab fa-instagram"></i></a>
+                    class="fab fa-instagram" style="font-size: xx-large;"></i></a>
             <a href="https://www.linkedin.com/company/95059790/admin/?feedType=following" target="_blank"
-                class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/gravitypackers" target="_blank" class="social-link"><i
-                    class="fab fa-twitter"></i></a>
+                class="social-link"><i class="fab fa-linkedin" style="font-size: xx-large;"></i></a>
+            <a href="https://twitter.com/gravitypackers" target="_blank" class="social-link"><i class="fab fa-twitter"
+                    style="font-size: xx-large;"></i></a>
         </div>
         <hr>
     </div>
@@ -394,22 +394,21 @@
         <nav class="navbar" style="    background-color: #420106;; margin-top: -15px; height: 120px;">
             <div class="container" style="margin-top: -20px;">
                 <div class="navbar-logo">
-                    <a href="index.php"><img src="img/logo.jpg" alt="Logo" /></a>
+                    <a href="index.php"><img src="/img/logo.jpg" alt="Logo" /></a>
                 </div>
                 <div class="navbar-menu" id="navbarMenu">
-                    <ul class="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="services.php">Services</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                    <ul class="menu" style="margin-left: -22px;">
+                        <li><a href="index.php" style="font-size: 23px;">Home</a></li>
+                        <li><a href="about.php" style="font-size: 23px;">About</a></li>
+                        <li><a href="services.php" style="font-size: 23px;">Services</a></li>
+                        <li><a href="contact.php" style="font-size: 23px;">Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-toggle" id="navbarToggle">
-                    <div class="toggle-icon" style="color: black;"></div>
+                    <div class="toggle-icon">&#9776;</div>
                 </div>
             </div>
         </nav>
-
 
 
 
@@ -459,8 +458,8 @@
         </div> -->
 
         <!-- contact section start -->
-        <div class="container" style="margin-top: 50px;">
-            <h1 class="what_text">Contact US</h1>
+        <div class="container" style="margin-top: 80px; display:flex,; justify-content:center">
+            <h1 class="what_text" style=" display:flex,; justify-content:center">Contact US</h1>
         </div> <br><br><br>
 
         <!-- <section class="contact-section">
@@ -525,6 +524,8 @@
                     </form>
             </div>
         </section> -->
+
+
         <section class="contact-section">
             <div class="address-details" style="background-color: rgb(138, 207, 138);">
                 <h3 style="justify-content: center; display: flex;">CONTACT INFO</h3>
@@ -665,9 +666,9 @@
         <!-- Javascript files-->
 
         <script type="text/javascript">
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-        }
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
+            }
         </script>
 
 
@@ -683,97 +684,97 @@
         <script src="js/owl.carousel.js"></script>
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         <script>
-        $(document).ready(function() {
-            $(".fancybox").fancybox({
-                openEffect: "none",
-                closeEffect: "none"
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none"
+                });
+
+                $(".zoom").hover(function () {
+
+                    $(this).addClass('transition');
+                }, function () {
+
+                    $(this).removeClass('transition');
+                });
             });
-
-            $(".zoom").hover(function() {
-
-                $(this).addClass('transition');
-            }, function() {
-
-                $(this).removeClass('transition');
-            });
-        });
         </script>
         <script>
-        function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
         </script>
 
 
         <!-- formjs -->
         <script type="text/javascript">
-        if (window.history.replaceState) {
-            window.history.replaceState(null, null, window.location.href);
-        }
-        </script>
-
-
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var navbarToggle = document.getElementById('navbarToggle');
-            var navbarMenu = document.getElementById('navbarMenu');
-
-            navbarToggle.addEventListener('click', function() {
-                navbarToggle.classList.toggle('open');
-                navbarMenu.classList.toggle('show');
-            });
-        });
-
-        window.addEventListener('resize', function() {
-            var navbarToggle = document.getElementById('navbarToggle');
-            var navbarMenu = document.getElementById('navbarMenu');
-
-            if (window.innerWidth >= 768) {
-                navbarToggle.classList.remove('open');
-                navbarMenu.classList.remove('show');
+            if (window.history.replaceState) {
+                window.history.replaceState(null, null, window.location.href);
             }
-        });
+        </script>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbarToggle = document.getElementById('navbarToggle');
+                var navbarMenu = document.getElementById('navbarMenu');
+
+                navbarToggle.addEventListener('click', function () {
+                    navbarToggle.classList.toggle('open');
+                    navbarMenu.classList.toggle('show');
+                });
+            });
+
+            window.addEventListener('resize', function () {
+                var navbarToggle = document.getElementById('navbarToggle');
+                var navbarMenu = document.getElementById('navbarMenu');
+
+                if (window.innerWidth >= 768) {
+                    navbarToggle.classList.remove('open');
+                    navbarMenu.classList.remove('show');
+                }
+            });
         </script>
         <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const movingForm = document.getElementById('moving-form');
-            let position = window.innerWidth;
+            window.addEventListener('DOMContentLoaded', () => {
+                const movingForm = document.getElementById('moving-form');
+                let position = window.innerWidth;
 
-            function animate() {
-                if (position <
-                    script -
-                    movingForm
-                    .offsetWidth) {
-                    position = window.innerWidth;
+                function animate() {
+                    if (position <
+                        script -
+                        movingForm
+                            .offsetWidth) {
+                        position = window.innerWidth;
+                    }
+
+                    position--;
+                    movingForm.style.transform = `translateX(${position}px)`;
+                    requestAnimationFrame(animate);
                 }
 
-                position--;
-                movingForm.style.transform = `translateX(${position}px)`;
-                requestAnimationFrame(animate);
-            }
-
-            animate();
-        });
+                animate();
+            });
 
 
-        // Get the navbar-content element
-        const navbarContent = document.querySelector('.navbar-content');
+            // Get the navbar-content element
+            const navbarContent = document.querySelector('.navbar-content');
 
-        // Pause the animation on hover
-        navbarContent.addEventListener('mouseenter', () => {
-            const movingForm = document.querySelector('#moving-form');
-            movingForm.style.animationPlayState = 'paused';
-        });
+            // Pause the animation on hover
+            navbarContent.addEventListener('mouseenter', () => {
+                const movingForm = document.querySelector('#moving-form');
+                movingForm.style.animationPlayState = 'paused';
+            });
 
-        // Resume the animation when hover is removed
-        navbarContent.addEventListener('mouseleave', () => {
-            const movingForm = document.querySelector('#moving-form');
-            movingForm.style.animationPlayState = 'running';
-        });
+            // Resume the animation when hover is removed
+            navbarContent.addEventListener('mouseleave', () => {
+                const movingForm = document.querySelector('#moving-form');
+                movingForm.style.animationPlayState = 'running';
+            });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>

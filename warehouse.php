@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>gravitypackers&movers</title>
+    <title>Gravity Packers and Movers</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -122,16 +122,16 @@
     <!--header section start -->
     <div class="navbar-content">
         <div id="moving-form">
-            <span id="phone-number">Phone: 9380153945 / 8431881266</span>
-            <span id="email">E-mail :info@gravitypackersandmovers.com</span>
+            <span id="phone-number" style="font-size: 30px;">Phone: 9380153945 / 8431881266</span>
+            <span id="email" style="font-size: 30px;">E-mail :info@gravitypackersandmovers.com</span>
             <a href="https://www.facebook.com/profile.php?id=100093344330589" target="_blank" class="social-link"><i
-                    class="fab fa-facebook"></i></a>
+                    class="fab fa-facebook" style="font-size: xx-large;"></i></a>
             <a href="https://www.instagram.com/gravitypackers/" target="_blank" class="social-link"><i
-                    class="fab fa-instagram"></i></a>
+                    class="fab fa-instagram" style="font-size: xx-large;"></i></a>
             <a href="https://www.linkedin.com/company/95059790/admin/?feedType=following" target="_blank"
-                class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/gravitypackers" target="_blank" class="social-link"><i
-                    class="fab fa-twitter"></i></a>
+                class="social-link"><i class="fab fa-linkedin" style="font-size: xx-large;"></i></a>
+            <a href="https://twitter.com/gravitypackers" target="_blank" class="social-link"><i class="fab fa-twitter"
+                    style="font-size: xx-large;"></i></a>
         </div>
         <hr>
     </div>
@@ -140,22 +140,21 @@
         <nav class="navbar" style="    background-color: #420106;; margin-top: -15px; height: 120px;">
             <div class="container" style="margin-top: -20px;">
                 <div class="navbar-logo">
-                    <a href="index.php"><img src="img/logo.jpg" alt="Logo" /></a>
+                    <a href="index.php"><img src="/img/logo.jpg" alt="Logo" /></a>
                 </div>
                 <div class="navbar-menu" id="navbarMenu">
-                    <ul class="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="services.php">Services</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                    <ul class="menu" style="margin-left: -22px;">
+                        <li><a href="index.php" style="font-size: 23px;">Home</a></li>
+                        <li><a href="about.php" style="font-size: 23px;">About</a></li>
+                        <li><a href="services.php" style="font-size: 23px;">Services</a></li>
+                        <li><a href="contact.php" style="font-size: 23px;">Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-toggle" id="navbarToggle">
-                    <div class="toggle-icon" style="color: black;"></div>
+                    <div class="toggle-icon">&#9776;</div>
                 </div>
             </div>
         </nav>
-
 
 
         <h1

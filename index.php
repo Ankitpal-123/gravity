@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
     <!-- site metas -->
-    <title>gravitypackers&movers</title>
+    <title>Gravity Packers and Movers</title>
     <meta name="keywords" content="" />
     <meta name="description" content="" />
     <meta name="author" content="" />
@@ -40,9 +40,9 @@
     /* Styling for the container */
 
     .toggle-icon {
-            /* Add the following line to change the color of the toggle icon to black */
-            filter: invert(1);
-        }
+        /* Add the following line to change the color of the toggle icon to black */
+        filter: invert(1);
+    }
 
     .heading {
         background-color: rgb(219, 51, 51);
@@ -197,6 +197,7 @@
     hr {
         border-top: 1px solid #ff0000;
     }
+
     @media (max-width: 768px) {
         .navbar-toggle {
             color: black;
@@ -210,16 +211,16 @@
 <body>
     <div class="navbar-content">
         <div id="moving-form">
-            <span id="phone-number">Phone: 9380153945 / 8431881266</span>
-            <span id="email">E-mail :info@gravitypackersandmovers.com</span>
+            <span id="phone-number" style="font-size: 30px;">Phone: 9380153945 / 8431881266</span>
+            <span id="email" style="font-size: 30px;">E-mail :info@gravitypackersandmovers.com</span>
             <a href="https://www.facebook.com/profile.php?id=100093344330589" target="_blank" class="social-link"><i
-                    class="fab fa-facebook"></i></a>
+                    class="fab fa-facebook" style="font-size: xx-large;"></i></a>
             <a href="https://www.instagram.com/gravitypackers/" target="_blank" class="social-link"><i
-                    class="fab fa-instagram"></i></a>
+                    class="fab fa-instagram" style="font-size: xx-large;"></i></a>
             <a href="https://www.linkedin.com/company/95059790/admin/?feedType=following" target="_blank"
-                class="social-link"><i class="fab fa-linkedin"></i></a>
+                class="social-link"><i class="fab fa-linkedin" style="font-size: xx-large;"></i></a>
             <a href="https://twitter.com/gravitypackers" target="_blank" class="social-link"><i
-                    class="fab fa-twitter"></i></a>
+                    class="fab fa-twitter" style="font-size: xx-large;"></i></a>
         </div>
         <hr>
     </div>
@@ -231,15 +232,15 @@
                     <a href="index.php"><img src="/img/logo.jpg" alt="Logo" /></a>
                 </div>
                 <div class="navbar-menu" id="navbarMenu">
-                    <ul class="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="services.php">Services</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                    <ul class="menu" style="margin-left: -22px;">
+                        <li><a href="index.php" style="font-size: 23px;">Home</a></li>
+                        <li><a href="about.php" style="font-size: 23px;">About</a></li>
+                        <li><a href="services.php" style="font-size: 23px;">Services</a></li>
+                        <li><a href="contact.php" style="font-size: 23px;">Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-toggle" id="navbarToggle">
-                  <div class="toggle-icon">&#9776;</div>
+                    <div class="toggle-icon">&#9776;</div>
                 </div>
             </div>
         </nav>
@@ -290,7 +291,7 @@
                                 <div class="col-md-6" style="margin-top: 50px;">
                                     <div class="padding_left_0">
                                         <h1 class="retailer_text" style="color: orange;">
-                                          Welcome to Gravity packers and movers
+                                            Welcome to Gravity packers and movers
                                         </h1>
                                         <p class="search_text" style="color: rgb(249, 243, 243);">
                                             Gravity Packers and Movers is one of the best Reasonable
@@ -322,7 +323,7 @@
                                 <div class="col-md-6" style="margin-top: 50px;">
                                     <div class="padding_left_0">
                                         <h1 class="retailer_text" style="color: orange;">
-                                          Welcome to Gravity packers and moversl
+                                            Welcome to Gravity packers and moversl
                                         </h1>
                                         <p class="search_text" style="color: rgb(249, 243, 243);">
                                             Gravity Packers and Movers is one of the best Reasonable
@@ -370,31 +371,36 @@
         </div>
     </div>
     <div class="advisor_section_2 layout_padding">
-      <div class="container">
-        <div class="box_section">
-          <div class="row">
-            <div class="col-12">
-              <p class="readable_text" style="font-size: 25px;">
-                We work with well-prepared and polite young professionals in our team who always handle all your products
-                safely and securely. We help our customers move their belongings by offering quality-oriented services at
-                affordable rates.
-              </p>
+        <div class="container">
+            <div class="box_section">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="readable_text" style="font-size: 16px;">
+                            We work with well-prepared and polite young professionals in our team who always handle all
+                            your products
+                            safely and securely. We help our customers move their belongings by offering
+                            quality-oriented services at
+                            affordable rates.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 bulltes" style="margin-top: 20px;">
+                        <ul>
+                            <li   style="font-size: 16px;     color: #0c0b0e;"><span style=" font-size: 25px;">.</span> Fully Professional Service.</li>
+                            <li  style="font-size: 16px;     color: #0c0b0e;"><span style="font-weight: 900 ;font-size: 25px;">.</span> Full Responsibility of Goods.
+                            </li>
+                            <li  style="font-size: 16px;     color: #0c0b0e;"><span style="font-weight: 900; font-size: 25px;">.</span> On-time Delivery.</li>
+                            <li  style="font-size: 16px;     color: #0c0b0e;"><span style="font-weight: 900; font-size: 25px;">.</span> Top Quality Packing Material.
+                            </li>
+                            <li  style="font-size: 16px;     color: #0c0b0e;"><span style="font-weight: 900; font-size: 25px;">.</span> Affordable Rate.</li>
+                            <li  style="font-size:16px;     color: #0c0b0e;"><span style="font-weight: 900; font-size: 25px;">.</span> Skilled and Professional
+                                Staff.</li>
+                            <li  style="font-size: 16px;     color: #0c0b0e;"><span style="font-weight: 900; font-size: 25px;">.</span> All India Wide Network.</li>
+                            <li style="font-size:16px;     color: #0c0b0e;"><span style="font-size: 25px;; font-size: 25px;">.</span> Door to Door Service.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-lg-6 bulltes">
-              <ul>
-                <li style=""><span style=" font-size: 25px;">.</span> Fully Professional Service.</li>
-                <li><span style="font-weight: 900 ;font-size: 25px;">.</span> Full Responsibility of Goods.</li>
-                <li><span style="font-weight: 900; font-size: 25px;">.</span> On-time Delivery.</li>
-                <li><span style="font-weight: 900; font-size: 25px;">.</span> Top Quality Packing Material.</li>
-                <li><span style="font-weight: 900; font-size: 25px;">.</span> Affordable Rate.</li>
-                <li><span style="font-weight: 900; font-size: 25px;">.</span> Skilled and Professional Staff.</li>
-                <li><span style="font-weight: 900; font-size: 25px;">.</span> All India Wide Network.</li>
-                <li><span style="font-weight: 900; font-size: 25px;">.</span> Door to Door Service.</li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
 
 
@@ -587,15 +593,15 @@
     <!-- counter-start -->
 
 
-    <div class="" style="margin-bottom: 100px;">
+    <div class="" style="margin-bottom: 100px; display: block;">
         wn</div>
 
     <h1 style="display: flex; justify-content: center; font-size: xx-large; font-weight: bolder;">Contact US</h1>
 
     <!-- alert message start -->
-    <div class="heading">
+    <!-- <div class="heading">
         <p> Get Free Moving Estimate</p>
-    </div>
+    </div> -->
     <div class="container container-2" style="justify-content: center; display: flex; border-color: black; ">
 
         <form action="https://formsubmit.co/info@gravitypackersandmovers.com" method="POST">
@@ -819,34 +825,34 @@
     <!-- couter -->
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-          const container = document.querySelector(".container.mainitem");
-          container.addEventListener("mouseenter", () => {
-              const counters = document.querySelectorAll(".counter-number");
-              const speed = 200;
-  
-              counters.forEach((counter) => {
-                  const updateCount = () => {
-                      const target = +counter.getAttribute("data-target");
-                      let count = +counter.innerText;
-  
-                      const inc = target / speed;
-  
-                      if (count < target) {
-                          count += inc;
-                          counter.innerText = Math.ceil(count);
-                          setTimeout(updateCount, 1);
-                      } else {
-                          counter.innerText = target;
-                      }
-                  };
-  
-                  updateCount();
-              });
-          });
-      });
-  </script>
-  
+    document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector(".container.mainitem");
+        container.addEventListener("mouseenter", () => {
+            const counters = document.querySelectorAll(".counter-number");
+            const speed = 200;
+
+            counters.forEach((counter) => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute("data-target");
+                    let count = +counter.innerText;
+
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        count += inc;
+                        counter.innerText = Math.ceil(count);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
+        });
+    });
+    </script>
+
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -886,7 +892,7 @@
 
         function animate() {
             if (position <
-                script   -
+                script -
                 movingForm
                 .offsetWidth) {
                 position = window.innerWidth;

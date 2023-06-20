@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>gravitypackers&movers</title>
+    <title>Gravity Packers and Movers</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -38,84 +38,84 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
-    /* Styles for responsive screen */
-    @media screen and (max-width: 768px) {
-        .navbar-menu ul.menu li a {
-            color: black !important;
-            margin-left: -15px;
-            gap: 10px;
+        /* Styles for responsive screen */
+        @media screen and (max-width: 768px) {
+            .navbar-menu ul.menu li a {
+                color: black !important;
+                margin-left: -15px;
+                gap: 10px;
 
+            }
+
+            h1 {
+                margin-top: 70px;
+            }
+
+            .navbar-menu .menu {
+                gap: 10px;
+            }
         }
 
-        h1 {
-            margin-top: 70px;
+        .toggle-icon {
+            /* Add the following line to change the color of the toggle icon to black */
+            filter: invert(1);
         }
-
-        .navbar-menu .menu {
-            gap: 10px;
-        }
-    }
-
-    .toggle-icon {
-        /* Add the following line to change the color of the toggle icon to black */
-        filter: invert(1);
-    }
     </style>
 
     <style>
-    .navbar-content {
-        overflow: hidden;
-        background-color: #420106
-    }
-
-    #moving-form {
-        white-space: nowrap;
-        animation: moveLeft 20s infinite linear;
-        animation-delay: -20s;
-        animation-fill-mode: forwards;
-        animation-timing-function: linear;
-        display: inline-block;
-        width: 100%;
-    }
-
-    #moving-form span {
-        color: white;
-        font-size: 20px;
-    }
-
-    @keyframes moveLeft {
-        0% {
-            transform: translateX(100%);
+        .navbar-content {
+            overflow: hidden;
+            background-color: #420106
         }
 
-        100% {
-            transform: translateX(-100%);
+        #moving-form {
+            white-space: nowrap;
+            animation: moveLeft 20s infinite linear;
+            animation-delay: -20s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            display: inline-block;
+            width: 100%;
         }
-    }
 
-    #phone-number {
-        margin-right: 20px;
-        /* Adjust the value to increase or decrease the space */
-    }
+        #moving-form span {
+            color: white;
+            font-size: 20px;
+        }
 
-    #email {
-        margin-right: 20px;
-        /* Adjust the value to increase or decrease the space */
-    }
+        @keyframes moveLeft {
+            0% {
+                transform: translateX(100%);
+            }
 
-    #moving-form a.social-link {
-        display: inline-block;
-        margin-left: 10px;
-    }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
 
-    #moving-form a.social-link i {
-        font-size: 20px;
-        color: #fff;
-    }
+        #phone-number {
+            margin-right: 20px;
+            /* Adjust the value to increase or decrease the space */
+        }
 
-    hr {
-        border-top: 1px solid #ff0000;
-    }
+        #email {
+            margin-right: 20px;
+            /* Adjust the value to increase or decrease the space */
+        }
+
+        #moving-form a.social-link {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        #moving-form a.social-link i {
+            font-size: 20px;
+            color: #fff;
+        }
+
+        hr {
+            border-top: 1px solid #ff0000;
+        }
     </style>
 
 
@@ -125,16 +125,16 @@
     <!--header section start -->
     <div class="navbar-content">
         <div id="moving-form">
-            <span id="phone-number">Phone: 9380153945 / 8431881266</span>
-            <span id="email">E-mail :info@gravitypackersandmovers.com</span>
+            <span id="phone-number" style="font-size: 30px;">Phone: 9380153945 / 8431881266</span>
+            <span id="email" style="font-size: 30px;">E-mail :info@gravitypackersandmovers.com</span>
             <a href="https://www.facebook.com/profile.php?id=100093344330589" target="_blank" class="social-link"><i
-                    class="fab fa-facebook"></i></a>
+                    class="fab fa-facebook" style="font-size: xx-large;"></i></a>
             <a href="https://www.instagram.com/gravitypackers/" target="_blank" class="social-link"><i
-                    class="fab fa-instagram"></i></a>
+                    class="fab fa-instagram" style="font-size: xx-large;"></i></a>
             <a href="https://www.linkedin.com/company/95059790/admin/?feedType=following" target="_blank"
-                class="social-link"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/gravitypackers" target="_blank" class="social-link"><i
-                    class="fab fa-twitter"></i></a>
+                class="social-link"><i class="fab fa-linkedin" style="font-size: xx-large;"></i></a>
+            <a href="https://twitter.com/gravitypackers" target="_blank" class="social-link"><i class="fab fa-twitter"
+                    style="font-size: xx-large;"></i></a>
         </div>
         <hr>
     </div>
@@ -143,22 +143,21 @@
         <nav class="navbar" style="    background-color: #420106;; margin-top: -15px; height: 120px;">
             <div class="container" style="margin-top: -20px;">
                 <div class="navbar-logo">
-                    <a href="index.php"><img src="img/logo.jpg" alt="Logo" /></a>
+                    <a href="index.php"><img src="/img/logo.jpg" alt="Logo" /></a>
                 </div>
                 <div class="navbar-menu" id="navbarMenu">
-                    <ul class="menu">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about.php">About</a></li>
-                        <li><a href="services.php">Services</a></li>
-                        <li><a href="contact.php">Contact</a></li>
+                    <ul class="menu" style="margin-left: -22px;">
+                        <li><a href="index.php" style="font-size: 23px;">Home</a></li>
+                        <li><a href="about.php" style="font-size: 23px;">About</a></li>
+                        <li><a href="services.php" style="font-size: 23px;">Services</a></li>
+                        <li><a href="contact.php" style="font-size: 23px;">Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-toggle" id="navbarToggle">
-                    <div class="toggle-icon" style="color: black;"></div>
+                    <div class="toggle-icon">&#9776;</div>
                 </div>
             </div>
         </nav>
-
 
 
 
@@ -275,62 +274,62 @@
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 
         <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var navbarToggle = document.getElementById('navbarToggle');
-            var navbarMenu = document.getElementById('navbarMenu');
+            document.addEventListener('DOMContentLoaded', function () {
+                var navbarToggle = document.getElementById('navbarToggle');
+                var navbarMenu = document.getElementById('navbarMenu');
 
-            navbarToggle.addEventListener('click', function() {
-                navbarToggle.classList.toggle('open');
-                navbarMenu.classList.toggle('show');
+                navbarToggle.addEventListener('click', function () {
+                    navbarToggle.classList.toggle('open');
+                    navbarMenu.classList.toggle('show');
+                });
             });
-        });
 
-        window.addEventListener('resize', function() {
-            var navbarToggle = document.getElementById('navbarToggle');
-            var navbarMenu = document.getElementById('navbarMenu');
+            window.addEventListener('resize', function () {
+                var navbarToggle = document.getElementById('navbarToggle');
+                var navbarMenu = document.getElementById('navbarMenu');
 
-            if (window.innerWidth >= 768) {
-                navbarToggle.classList.remove('open');
-                navbarMenu.classList.remove('show');
-            }
-        });
+                if (window.innerWidth >= 768) {
+                    navbarToggle.classList.remove('open');
+                    navbarMenu.classList.remove('show');
+                }
+            });
         </script>
         <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const movingForm = document.getElementById('moving-form');
-            let position = window.innerWidth;
+            window.addEventListener('DOMContentLoaded', () => {
+                const movingForm = document.getElementById('moving-form');
+                let position = window.innerWidth;
 
-            function animate() {
-                if (position <
-                    script -
-                    movingForm
-                    .offsetWidth) {
-                    position = window.innerWidth;
+                function animate() {
+                    if (position <
+                        script -
+                        movingForm
+                            .offsetWidth) {
+                        position = window.innerWidth;
+                    }
+
+                    position--;
+                    movingForm.style.transform = `translateX(${position}px)`;
+                    requestAnimationFrame(animate);
                 }
 
-                position--;
-                movingForm.style.transform = `translateX(${position}px)`;
-                requestAnimationFrame(animate);
-            }
-
-            animate();
-        });
+                animate();
+            });
 
 
-        // Get the navbar-content element
-        const navbarContent = document.querySelector('.navbar-content');
+            // Get the navbar-content element
+            const navbarContent = document.querySelector('.navbar-content');
 
-        // Pause the animation on hover
-        navbarContent.addEventListener('mouseenter', () => {
-            const movingForm = document.querySelector('#moving-form');
-            movingForm.style.animationPlayState = 'paused';
-        });
+            // Pause the animation on hover
+            navbarContent.addEventListener('mouseenter', () => {
+                const movingForm = document.querySelector('#moving-form');
+                movingForm.style.animationPlayState = 'paused';
+            });
 
-        // Resume the animation when hover is removed
-        navbarContent.addEventListener('mouseleave', () => {
-            const movingForm = document.querySelector('#moving-form');
-            movingForm.style.animationPlayState = 'running';
-        });
+            // Resume the animation when hover is removed
+            navbarContent.addEventListener('mouseleave', () => {
+                const movingForm = document.querySelector('#moving-form');
+                movingForm.style.animationPlayState = 'running';
+            });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
