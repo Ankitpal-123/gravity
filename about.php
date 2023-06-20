@@ -40,102 +40,107 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
+    .toggle-icon {
+        /* Add the following line to change the color of the toggle icon to black */
+        filter: invert(1);
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+
+
+
+    .card-img-container {
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img-top {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    @media screen and (max-width: 768px) {
+        .navbar-menu ul.menu li a {
+            color: black !important;
+            margin-left: -15px;
+            gap: 10px;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
+        .navbar-menu .menu {
+            gap: 10px;
         }
-
-
-
-
-        .card-img-container {
-            height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .card-img-top {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain;
-        }
-
-        @media screen and (max-width: 768px) {
-            .navbar-menu ul.menu li a {
-                color: black !important;
-                margin-left: -15px;
-                gap: 10px;
-            }
-
-            .navbar-menu .menu {
-                gap: 10px;
-            }
-        }
+    }
     </style>
 
 
     <style>
-        .navbar-content {
-            overflow: hidden;
-            background-color: #420106
+    .navbar-content {
+        overflow: hidden;
+        background-color: #420106
+    }
+
+    #moving-form {
+        white-space: nowrap;
+        animation: moveLeft 20s infinite linear;
+        animation-delay: -20s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #moving-form span {
+        color: white;
+        font-size: 20px;
+    }
+
+    @keyframes moveLeft {
+        0% {
+            transform: translateX(100%);
         }
 
-        #moving-form {
-            white-space: nowrap;
-            animation: moveLeft 20s infinite linear;
-            animation-delay: -20s;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            display: inline-block;
-            width: 100%;
+        100% {
+            transform: translateX(-100%);
         }
+    }
 
-        #moving-form span {
-            color: white;
-            font-size: 20px;
-        }
+    #phone-number {
+        margin-right: 20px;
+        /* Adjust the value to increase or decrease the space */
+    }
 
-        @keyframes moveLeft {
-            0% {
-                transform: translateX(100%);
-            }
+    #email {
+        margin-right: 20px;
+        /* Adjust the value to increase or decrease the space */
+    }
 
-            100% {
-                transform: translateX(-100%);
-            }
-        }
+    #moving-form a.social-link {
+        display: inline-block;
+        margin-left: 10px;
+    }
 
-        #phone-number {
-            margin-right: 20px;
-            /* Adjust the value to increase or decrease the space */
-        }
+    #moving-form a.social-link i {
+        font-size: 20px;
+        color: #fff;
+    }
 
-        #email {
-            margin-right: 20px;
-            /* Adjust the value to increase or decrease the space */
-        }
-
-        #moving-form a.social-link {
-            display: inline-block;
-            margin-left: 10px;
-        }
-
-        #moving-form a.social-link i {
-            font-size: 20px;
-            color: #fff;
-        }
-
-        hr {
-            border-top: 1px solid #ff0000;
-        }
+    hr {
+        border-top: 1px solid #ff0000;
+    }
     </style>
 
 
@@ -391,56 +396,93 @@
         <script src="js/owl.carousel.js"></script>
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         <script>
-            $(document).ready(function () {
-                $(".fancybox").fancybox({
-                    openEffect: "none",
-                    closeEffect: "none"
-                });
-
-                $(".zoom").hover(function () {
-
-                    $(this).addClass('transition');
-                }, function () {
-
-                    $(this).removeClass('transition');
-                });
-            });
-        </script>
-        <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
-
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
-        </script>
-
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var navbarToggle = document.getElementById('navbarToggle');
-                var navbarMenu = document.getElementById('navbarMenu');
-
-                navbarToggle.addEventListener('click', function () {
-                    navbarToggle.classList.toggle('open');
-                    navbarMenu.classList.toggle('show');
-                });
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
             });
 
-            window.addEventListener('resize', function () {
-                var navbarToggle = document.getElementById('navbarToggle');
-                var navbarMenu = document.getElementById('navbarMenu');
+            $(".zoom").hover(function() {
 
-                if (window.innerWidth >= 768) {
-                    navbarToggle.classList.remove('open');
-                    navbarMenu.classList.remove('show');
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
+        </script>
+        <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        </script>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var navbarToggle = document.getElementById('navbarToggle');
+            var navbarMenu = document.getElementById('navbarMenu');
+
+            navbarToggle.addEventListener('click', function() {
+                navbarToggle.classList.toggle('open');
+                navbarMenu.classList.toggle('show');
+            });
+        });
+
+        window.addEventListener('resize', function() {
+            var navbarToggle = document.getElementById('navbarToggle');
+            var navbarMenu = document.getElementById('navbarMenu');
+
+            if (window.innerWidth >= 768) {
+                navbarToggle.classList.remove('open');
+                navbarMenu.classList.remove('show');
+            }
+        });
+        </script>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const movingForm = document.getElementById('moving-form');
+            let position = window.innerWidth;
+
+            function animate() {
+                if (position <
+                    script -
+                    movingForm
+                    .offsetWidth) {
+                    position = window.innerWidth;
                 }
-            });
+
+                position--;
+                movingForm.style.transform = `translateX(${position}px)`;
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
+
+
+        // Get the navbar-content element
+        const navbarContent = document.querySelector('.navbar-content');
+
+        // Pause the animation on hover
+        navbarContent.addEventListener('mouseenter', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'paused';
+        });
+
+        // Resume the animation when hover is removed
+        navbarContent.addEventListener('mouseleave', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'running';
+        });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
             integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
-            </script>
+        </script>
 </body>
 
 </html>

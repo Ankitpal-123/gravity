@@ -40,328 +40,333 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <style>
-        .location-icon {
-            color: #007bff;
-            font-size: 24px;
-            margin-right: 8px;
-        }
+    .toggle-icon {
+        /* Add the following line to change the color of the toggle icon to black */
+        filter: invert(1);
+    }
 
-        .contact-icons {
-            display: flex;
-            align-items: center;
-        }
+    .location-icon {
+        color: #007bff;
+        font-size: 24px;
+        margin-right: 8px;
+    }
 
-        .contact-icons i {
-            margin-right: 8px;
-        }
+    .contact-icons {
+        display: flex;
+        align-items: center;
+    }
 
-        .heading {
-            background-color: rgb(219, 51, 51);
-            justify-content: center;
-            display: flex;
-            width: 400px;
-            border-radius: 10px 10px 0 0;
-            margin-left: 560px;
-        }
+    .contact-icons i {
+        margin-right: 8px;
+    }
 
-        .heading p {
-            font-size: x-large;
-            color: black;
-        }
+    .heading {
+        background-color: rgb(219, 51, 51);
+        justify-content: center;
+        display: flex;
+        width: 400px;
+        border-radius: 10px 10px 0 0;
+        margin-left: 560px;
+    }
 
-        label {
-            font-size: large;
-            color: black;
-        }
+    .heading p {
+        font-size: x-large;
+        color: black;
+    }
 
-        .container-2 {
-            background-color: rgb(154, 199, 184);
-            display: flex;
-            justify-content: center;
-            border: 2px solid black;
-            padding: 20px;
-            border-radius: 5px;
-            width: 400px;
-            margin: 0 auto;
-        }
+    label {
+        font-size: large;
+        color: black;
+    }
 
-        .container-2 .radio {
-            display: flex;
-            font-size: x-large;
+    .container-2 {
+        background-color: rgb(154, 199, 184);
+        display: flex;
+        justify-content: center;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 5px;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .container-2 .radio {
+        display: flex;
+        font-size: x-large;
+        gap: 10px;
+    }
+
+    .container-2 form label {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .container-2 form input[type="text"],
+    .container-2 form input[type="tel"],
+    .container-2 form textarea {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    .container-2 form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .container-2 form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    </style>
+
+
+    <style>
+    @media screen and (max-width: 768px) {
+        .navbar-menu ul.menu li a {
+            color: black !important;
+            margin-left: -15px;
             gap: 10px;
         }
 
-        .container-2 form label {
-            margin-top: 10px;
-            margin-bottom: 5px;
+        .navbar-menu .menu {
+            gap: 10px;
+        }
+    }
+
+    .navbar-content {
+        overflow: hidden;
+        background-color: #420106
+    }
+
+    #moving-form {
+        white-space: nowrap;
+        animation: moveLeft 20s infinite linear;
+        animation-delay: -20s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #moving-form span {
+        color: white;
+        font-size: 20px;
+    }
+
+    @keyframes moveLeft {
+        0% {
+            transform: translateX(100%);
         }
 
-        .container-2 form input[type="text"],
-        .container-2 form input[type="tel"],
-        .container-2 form textarea {
-            width: 100%;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-            margin-bottom: 10px;
+        100% {
+            transform: translateX(-100%);
         }
+    }
 
-        .container-2 form input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+    #phone-number {
+        margin-right: 20px;
+        /* Adjust the value to increase or decrease the space */
+    }
 
-        .container-2 form input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+    #email {
+        margin-right: 20px;
+        /* Adjust the value to increase or decrease the space */
+    }
+
+    #moving-form a.social-link {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    #moving-form a.social-link i {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    hr {
+        border-top: 1px solid #ff0000;
+    }
+    </style>
+
+    <style>
+    .contact-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .address-details,
+    .contact-form {
+        width: 45%;
+        padding: 20px;
+        ;
+    }
+
+    .contact-form {
+        background-color: #ffffff;
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #007bff;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 40px;
+    }
+
+    .address-details,
+    .contact-form {
+        width: 45%;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
     </style>
 
 
     <style>
-        @media screen and (max-width: 768px) {
-            .navbar-menu ul.menu li a {
-                color: black !important;
-                margin-left: -15px;
-                gap: 10px;
-            }
-
-            .navbar-menu .menu {
-                gap: 10px;
-            }
-        }
-
-        .navbar-content {
-            overflow: hidden;
-            background-color: #420106
-        }
-
-        #moving-form {
-            white-space: nowrap;
-            animation: moveLeft 20s infinite linear;
-            animation-delay: -20s;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            display: inline-block;
-            width: 100%;
-        }
-
-        #moving-form span {
-            color: white;
-            font-size: 20px;
-        }
-
-        @keyframes moveLeft {
-            0% {
-                transform: translateX(100%);
-            }
-
-            100% {
-                transform: translateX(-100%);
-            }
-        }
-
-        #phone-number {
-            margin-right: 20px;
-            /* Adjust the value to increase or decrease the space */
-        }
-
-        #email {
-            margin-right: 20px;
-            /* Adjust the value to increase or decrease the space */
-        }
-
-        #moving-form a.social-link {
-            display: inline-block;
-            margin-left: 10px;
-        }
-
-        #moving-form a.social-link i {
-            font-size: 20px;
-            color: #fff;
-        }
-
-        hr {
-            border-top: 1px solid #ff0000;
-        }
-    </style>
-
-    <style>
+    @media (max-width: 768px) {
         .contact-section {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .address-details,
         .contact-form {
-            width: 45%;
-            padding: 20px;
-            ;
+            width: 100%;
         }
 
-        .contact-form {
-            background-color: #ffffff;
+        .address-details {
+            margin-bottom: 20px;
         }
 
-        h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        p {
-            margin-bottom: 8px;
-        }
-
-        form {
+        .radio {
             display: flex;
             flex-direction: column;
+            align-items: center;
         }
 
-        label {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        input,
-        textarea {
-            padding: 10px;
-            margin-bottom: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-
-
-        button:hover {
-            background-color: #0056b3;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            background-color: #007bff;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .contact-section {
+        .email {
             display: flex;
             justify-content: center;
-            align-items: flex-start;
-            margin: 40px;
+            font-size: 15px;
         }
+    }
 
-        .address-details,
-        .contact-form {
-            width: 45%;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-        }
+    /* Adjust the font sizes for smaller screens */
+    @media (max-width: 480px) {
 
-        h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
+        h1,
+        h3,
         p {
-            margin-bottom: 8px;
+            font-size: 24px;
         }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        input,
-        textarea {
-            padding: 10px;
-            margin-bottom: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: #ffffff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-
-
-    <style>
-        @media (max-width: 768px) {
-            .contact-section {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .address-details,
-            .contact-form {
-                width: 100%;
-            }
-
-            .address-details {
-                margin-bottom: 20px;
-            }
-
-            .radio {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .email {
-                display: flex;
-                justify-content: center;
-                font-size: 15px;
-            }
-        }
-
-        /* Adjust the font sizes for smaller screens */
-        @media (max-width: 480px) {
-
-            h1,
-            h3,
-            p {
-                font-size: 24px;
-            }
-        }
+    }
     </style>
 
 
@@ -660,9 +665,9 @@
         <!-- Javascript files-->
 
         <script type="text/javascript">
-            if (window.history.replaceState) {
-                window.history.replaceState(null, null, window.location.href);
-            }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
         </script>
 
 
@@ -678,60 +683,97 @@
         <script src="js/owl.carousel.js"></script>
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         <script>
-            $(document).ready(function () {
-                $(".fancybox").fancybox({
-                    openEffect: "none",
-                    closeEffect: "none"
-                });
-
-                $(".zoom").hover(function () {
-
-                    $(this).addClass('transition');
-                }, function () {
-
-                    $(this).removeClass('transition');
-                });
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
             });
+
+            $(".zoom").hover(function() {
+
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
         </script>
         <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
         </script>
 
 
         <!-- formjs -->
         <script type="text/javascript">
-            if (window.history.replaceState) {
-                window.history.replaceState(null, null, window.location.href);
-            }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
         </script>
 
 
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var navbarToggle = document.getElementById('navbarToggle');
-                var navbarMenu = document.getElementById('navbarMenu');
+        document.addEventListener('DOMContentLoaded', function() {
+            var navbarToggle = document.getElementById('navbarToggle');
+            var navbarMenu = document.getElementById('navbarMenu');
 
-                navbarToggle.addEventListener('click', function () {
-                    navbarToggle.classList.toggle('open');
-                    navbarMenu.classList.toggle('show');
-                });
+            navbarToggle.addEventListener('click', function() {
+                navbarToggle.classList.toggle('open');
+                navbarMenu.classList.toggle('show');
             });
+        });
 
-            window.addEventListener('resize', function () {
-                var navbarToggle = document.getElementById('navbarToggle');
-                var navbarMenu = document.getElementById('navbarMenu');
+        window.addEventListener('resize', function() {
+            var navbarToggle = document.getElementById('navbarToggle');
+            var navbarMenu = document.getElementById('navbarMenu');
 
-                if (window.innerWidth >= 768) {
-                    navbarToggle.classList.remove('open');
-                    navbarMenu.classList.remove('show');
+            if (window.innerWidth >= 768) {
+                navbarToggle.classList.remove('open');
+                navbarMenu.classList.remove('show');
+            }
+        });
+        </script>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const movingForm = document.getElementById('moving-form');
+            let position = window.innerWidth;
+
+            function animate() {
+                if (position <
+                    script -
+                    movingForm
+                    .offsetWidth) {
+                    position = window.innerWidth;
                 }
-            });
+
+                position--;
+                movingForm.style.transform = `translateX(${position}px)`;
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
+
+
+        // Get the navbar-content element
+        const navbarContent = document.querySelector('.navbar-content');
+
+        // Pause the animation on hover
+        navbarContent.addEventListener('mouseenter', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'paused';
+        });
+
+        // Resume the animation when hover is removed
+        navbarContent.addEventListener('mouseleave', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'running';
+        });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>

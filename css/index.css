@@ -2,6 +2,11 @@
   background-image: none;
 }
 
+.toggle-icon {
+  /* Add the following line to change the color of the toggle icon to black */
+  filter: invert(1);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -95,6 +100,13 @@ body {
 
 .toggle-icon::after {
   top: 6px;
+  color: black;
+}
+
+.toggle-icon,
+.toggle-icon::before,
+.toggle-icon::after {
+  background-color: black;
   color: black;
 }
 
@@ -297,4 +309,68 @@ input[type="submit"]:hover {
 hr {
   border-top: 1px solid #ff0000;
   /* Replace #ff0000 with your desired color */
+}
+
+
+/* why choose us */
+
+.advisor_section_2 {
+  padding: 50px 0;
+}
+
+.box_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.readable_text {
+  font-size: 25px;
+  color: #0c0b0e;
+  max-width: 100%;
+}
+
+.bulltes ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.bulltes li {
+  font-size: 25px;
+  color: #0c0b0e;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .box_section {
+    flex-direction: row;
+  }
+
+  .readable_text {
+    width: 50%;
+    margin-right: 50px;
+  }
+}
+
+.container-2 {
+  justify-content: center;
+  display: flex;
+  border-color: black;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }

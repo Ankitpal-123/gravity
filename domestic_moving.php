@@ -106,6 +106,11 @@
     hr {
         border-top: 1px solid #ff0000;
     }
+
+    .toggle-icon {
+        /* Add the following line to change the color of the toggle icon to black */
+        filter: invert(1);
+    }
     </style>
 
 
@@ -285,6 +290,43 @@
                 navbarToggle.classList.remove('open');
                 navbarMenu.classList.remove('show');
             }
+        });
+        </script>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const movingForm = document.getElementById('moving-form');
+            let position = window.innerWidth;
+
+            function animate() {
+                if (position <
+                    script -
+                    movingForm
+                    .offsetWidth) {
+                    position = window.innerWidth;
+                }
+
+                position--;
+                movingForm.style.transform = `translateX(${position}px)`;
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
+
+
+        // Get the navbar-content element
+        const navbarContent = document.querySelector('.navbar-content');
+
+        // Pause the animation on hover
+        navbarContent.addEventListener('mouseenter', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'paused';
+        });
+
+        // Resume the animation when hover is removed
+        navbarContent.addEventListener('mouseleave', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'running';
         });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

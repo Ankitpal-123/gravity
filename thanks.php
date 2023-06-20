@@ -42,130 +42,135 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <style>
-        /* Styles for responsive screen */
-        @media screen and (max-width: 768px) {
-            .navbar-menu ul.menu li a {
-                color: black !important;
-                margin-left: -15px;
-                gap: 10px;
-            }
-
-            .navbar-menu .menu {
-                gap: 10px;
-            }
+    /* Styles for responsive screen */
+    @media screen and (max-width: 768px) {
+        .navbar-menu ul.menu li a {
+            color: black !important;
+            margin-left: -15px;
+            gap: 10px;
         }
+
+        .navbar-menu .menu {
+            gap: 10px;
+        }
+    }
     </style>
 
 
     <style>
-        .navbar-content {
-            overflow: hidden;
-            background-color: #420106
+    .navbar-content {
+        overflow: hidden;
+        background-color: #420106
+    }
+
+    #moving-form {
+        white-space: nowrap;
+        animation: moveLeft 20s infinite linear;
+        animation-delay: -20s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        display: inline-block;
+        width: 100%;
+    }
+
+    #moving-form span {
+        color: white;
+        font-size: 20px;
+    }
+
+    @keyframes moveLeft {
+        0% {
+            transform: translateX(100%);
         }
 
-        #moving-form {
-            white-space: nowrap;
-            animation: moveLeft 20s infinite linear;
-            animation-delay: -20s;
-            animation-fill-mode: forwards;
-            animation-timing-function: linear;
-            display: inline-block;
-            width: 100%;
+        100% {
+            transform: translateX(-100%);
         }
+    }
 
-        #moving-form span {
-            color: white;
-            font-size: 20px;
-        }
+    #phone-number {
+        margin-right: 20px;
+        /* Adjust the value to increase or decrease the space */
+    }
 
-        @keyframes moveLeft {
-            0% {
-                transform: translateX(100%);
-            }
+    #email {
+        margin-right: 20px;
+        /* Adjust the value to increase or decrease the space */
+    }
 
-            100% {
-                transform: translateX(-100%);
-            }
-        }
+    #moving-form a.social-link {
+        display: inline-block;
+        margin-left: 10px;
+    }
 
-        #phone-number {
-            margin-right: 20px;
-            /* Adjust the value to increase or decrease the space */
-        }
+    #moving-form a.social-link i {
+        font-size: 20px;
+        color: #fff;
+    }
 
-        #email {
-            margin-right: 20px;
-            /* Adjust the value to increase or decrease the space */
-        }
-
-        #moving-form a.social-link {
-            display: inline-block;
-            margin-left: 10px;
-        }
-
-        #moving-form a.social-link i {
-            font-size: 20px;
-            color: #fff;
-        }
-
-        hr {
-            border-top: 1px solid #ff0000;
-        }
+    hr {
+        border-top: 1px solid #ff0000;
+    }
     </style>
     <style>
-        body {
-            background-color: #f3f3f3;
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
+    body {
+        background-color: #f3f3f3;
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
 
-        .container2 {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 40px;
-            background-color: #ffffff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            margin-top: 100px;
-        }
+    .container2 {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        margin-top: 100px;
+    }
 
-        h1 {
-            font-size: 28px;
-            color: #333333;
-            margin-bottom: 20px;
-        }
+    h1 {
+        font-size: 28px;
+        color: #333333;
+        margin-bottom: 20px;
+    }
 
-        p {
-            font-size: 18px;
-            color: #666666;
-            margin-bottom: 30px;
-        }
+    p {
+        font-size: 18px;
+        color: #666666;
+        margin-bottom: 30px;
+    }
 
-        .thank-you-image {
-            margin-top: 30px;
-        }
+    .thank-you-image {
+        margin-top: 30px;
+    }
 
-        .social-icons {
-            margin-top: 30px;
-        }
+    .social-icons {
+        margin-top: 30px;
+    }
 
-        .social-icons a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            margin-right: 10px;
-            background-color: #333333;
-            color: #ffffff;
-            border-radius: 50%;
-            font-size: 20px;
-            line-height: 40px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
+    .social-icons a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        background-color: #333333;
+        color: #ffffff;
+        border-radius: 50%;
+        font-size: 20px;
+        line-height: 40px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
 
-        .social-icons a:hover {
-            background-color: #555555;
-        }
+    .social-icons a:hover {
+        background-color: #555555;
+    }
+
+    .toggle-icon {
+        /* Add the following line to change the color of the toggle icon to black */
+        filter: invert(1);
+    }
     </style>
 
 
@@ -289,9 +294,9 @@
         <!-- Javascript files-->
 
         <script type="text/javascript">
-            if (window.history.replaceState) {
-                window.history.replaceState(null, null, window.location.href);
-            }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
         </script>
 
 
@@ -307,60 +312,97 @@
         <script src="js/owl.carousel.js"></script>
         <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
         <script>
-            $(document).ready(function () {
-                $(".fancybox").fancybox({
-                    openEffect: "none",
-                    closeEffect: "none"
-                });
-
-                $(".zoom").hover(function () {
-
-                    $(this).addClass('transition');
-                }, function () {
-
-                    $(this).removeClass('transition');
-                });
+        $(document).ready(function() {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
             });
+
+            $(".zoom").hover(function() {
+
+                $(this).addClass('transition');
+            }, function() {
+
+                $(this).removeClass('transition');
+            });
+        });
         </script>
         <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
-            }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
-            }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
         </script>
 
 
         <!-- formjs -->
         <script type="text/javascript">
-            if (window.history.replaceState) {
-                window.history.replaceState(null, null, window.location.href);
-            }
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
         </script>
 
 
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var navbarToggle = document.getElementById('navbarToggle');
-                var navbarMenu = document.getElementById('navbarMenu');
+        document.addEventListener('DOMContentLoaded', function() {
+            var navbarToggle = document.getElementById('navbarToggle');
+            var navbarMenu = document.getElementById('navbarMenu');
 
-                navbarToggle.addEventListener('click', function () {
-                    navbarToggle.classList.toggle('open');
-                    navbarMenu.classList.toggle('show');
-                });
+            navbarToggle.addEventListener('click', function() {
+                navbarToggle.classList.toggle('open');
+                navbarMenu.classList.toggle('show');
             });
+        });
 
-            window.addEventListener('resize', function () {
-                var navbarToggle = document.getElementById('navbarToggle');
-                var navbarMenu = document.getElementById('navbarMenu');
+        window.addEventListener('resize', function() {
+            var navbarToggle = document.getElementById('navbarToggle');
+            var navbarMenu = document.getElementById('navbarMenu');
 
-                if (window.innerWidth >= 768) {
-                    navbarToggle.classList.remove('open');
-                    navbarMenu.classList.remove('show');
+            if (window.innerWidth >= 768) {
+                navbarToggle.classList.remove('open');
+                navbarMenu.classList.remove('show');
+            }
+        });
+        </script>
+        <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const movingForm = document.getElementById('moving-form');
+            let position = window.innerWidth;
+
+            function animate() {
+                if (position <
+                    script -
+                    movingForm
+                    .offsetWidth) {
+                    position = window.innerWidth;
                 }
-            });
+
+                position--;
+                movingForm.style.transform = `translateX(${position}px)`;
+                requestAnimationFrame(animate);
+            }
+
+            animate();
+        });
+
+
+        // Get the navbar-content element
+        const navbarContent = document.querySelector('.navbar-content');
+
+        // Pause the animation on hover
+        navbarContent.addEventListener('mouseenter', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'paused';
+        });
+
+        // Resume the animation when hover is removed
+        navbarContent.addEventListener('mouseleave', () => {
+            const movingForm = document.querySelector('#moving-form');
+            movingForm.style.animationPlayState = 'running';
+        });
         </script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
